@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 一起便了么</title>
+    <style>
+        :root {
+            --bg-color: #fcf9f2;
+            --card-bg: #ffffff;
+            --primary-color: #d9822b;
+            --text-color: #2c2825;
+            --text-muted: #7a736e;
+            --border-color: #eee7dd;
+            --highlight-bg: #fff5e6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.75;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0 0 8px 0;
+            text-align: center;
+        }
+
+        .update-date {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--bg-color);
+        }
+
+        p, li {
+            font-size: 14px;
+            color: var(--text-color);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+            .container {
+                padding: 24px 18px;
+                border-radius: 14px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>「一起便了么」隐私政策</h1>
+    <div class="update-date">更新及生效日期：2026年10月6日</div>
+
+    <div class="highlight-box">
+        <p>核心原则：我们奉行“Local-First（本地优先）”理念。您的所有肠道健康记录均保存在您的设备本地，我们绝不强制收集个人身份信息，亦不将您的健康数据上传至外部服务器。</p>
+    </div>
+
+    <p>欢迎使用「一起便了么」（以下简称“本应用”）。我们深知排便健康数据属于高度个人隐私，因此我们在设计本应用时将隐私保护放在首位。本隐私政策旨在向您说明本应用如何处理您的相关数据。</p>
+
+    <h2>一、 数据收集与存储说明</h2>
+    <ul>
+        <li><strong>健康日志数据：</strong>您在应用中记录的排便时长、形态类别（布里斯托分型）、颜色、感受及备注，均使用 SwiftData 技术加密存储于您的 iPhone 或 Apple Watch 设备本地。我们不会将此类数据上传至任何外部服务器。</li>
+        <li><strong>账户与身份信息：</strong>本应用无需注册账号即可正常使用，我们不会收集您的姓名、手机号、电子邮件或社交账号凭证。</li>
+        <li><strong>萌宠陪伴与计时：</strong>应用内置的萌宠互动与蹲坑计时功能均在本地运行，不产生任何后台数据追踪。</li>
+    </ul>
+
+    <h2>二、 地理位置与同伴微互动</h2>
+    <p>当您使用“附近微互动”（如递纸巾）功能时：</p>
+    <ul>
+        <li>本应用仅在获得您明确授权后获取您当前的粗略位置。</li>
+        <li>我们采用 <strong>Geohash 网格化技术</strong> 对位置数据进行模糊化处理，仅用于计算网格化区域内的临时互动状态。</li>
+        <li>我们<strong>绝不收集、记录或存储您的精确 GPS 坐标</strong>，亦不追踪您的移动轨迹。</li>
+    </ul>
+
+    <h2>三、 Apple Watch 设备同步</h2>
+    <p>若您同时使用 Apple Watch 伴侣应用，手表与 iPhone 之间的健康数据同步均通过 Apple 原生的 WatchConnectivity 框架在设备间点对点完成，不经过任何第三方中转服务器。</p>
+
+    <h2>四、 第三方 SDK 与广告</h2>
+    <ul>
+        <li>本应用第一版<strong>不包含任何第三方追踪或数据分析 SDK</strong>。</li>
+        <li>本应用第一版<strong>不接入任何第三方广告平台</strong>，不会追踪您的广告标识符（IDFA）。</li>
+    </ul>
+
+    <h2>五、 数据掌控与删除</h2>
+    <p>因为所有记录均存储于您的设备本地：</p>
+    <ul>
+        <li>您可以在应用内随时修改或删除单条健康记录。</li>
+        <li>若您彻底卸载本应用，保存在设备本地的所有健康数据将被系统自动永久清除且不可恢复。</li>
+    </ul>
+
+    <h2>六、 未成年人隐私 protection</h2>
+    <p>本应用不面向未成年人收集任何可识别个人身份的信息。鉴于数据完全保存在设备本地，家长可完全掌控设备上保存的任何内容。</p>
+
+    <h2>七、 隐私政策的变更</h2>
+    <p>随着应用功能的迭代升级，我们可能会适时更新本隐私政策。任何更新均会在本页面公示，并在应用内显著位置予以提醒。</p>
+
+    <h2>八、 联系我们</h2>
+    <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式与我们联系：</p>
+    <p>电子邮箱：<strong>support@triplog.org</strong></p>
+
+    <div class="footer">
+        &copy; 2026 一起便了么. 保留所有权利。
+    </div>
+</div>
+
+</body>
+</html>
