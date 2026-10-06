@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持与帮助中心 - 一起便了么</title>
+    <style>
+        :root {
+            --bg-color: #fcf9f2;
+            --card-bg: #ffffff;
+            --primary-color: #d9822b;
+            --primary-hover: #c47222;
+            --text-color: #2c2825;
+            --text-muted: #7a736e;
+            --border-color: #eee7dd;
+            --highlight-bg: #fff5e6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.75;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 36px;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            background-color: var(--highlight-bg);
+            border-radius: 18px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0 0 8px 0;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .contact-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-box p {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .email-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .email-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 8px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0 0 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .faq-answer {
+            font-size: 14px;
+            color: var(--text-color);
+            margin: 0;
+            padding-left: 24px;
+        }
+
+        .faq-answer ul {
+            margin: 6px 0 0 0;
+            padding-left: 18px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 16px;
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+            .card {
+                padding: 24px 18px;
+                border-radius: 14px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .faq-answer {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card header">
+        <div class="app-icon">🚽</div>
+        <h1>「一起便了么」技术支持与帮助中心</h1>
+        <p class="subtitle">专注隐私、轻松治愈的本地排便健康追踪与生活陪伴应用</p>
+
+        <div class="contact-box">
+            <p>遇到问题或有改进建议？随时联系我们</p>
+            <a href="mailto:support@triplog.org" class="email-btn">发送邮件至 support@triplog.org</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>常见问题 (FAQ)</h2>
+
+        <div class="faq-item">
+            <p class="faq-question"><span>❓</span> 我的健康数据保存在哪里？换手机会丢失吗？</p>
+            <p class="faq-answer">「一起便了么」坚持“本地优先（Local-First）”原则。您的所有记录均使用 SwiftData 加密存储在您的设备本地，不会上传至任何云端服务器。如果您开启了 iOS 系统自带的 iCloud 全机备份，更换手机并恢复备份时数据会自动迁移。</p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 20px 0;">
+
+        <div class="faq-item">
+            <p class="faq-question"><span>❓</span> “附近递纸巾”功能会暴露我的具体位置吗？</p>
+            <p class="faq-answer">绝对不会。本应用采用 Geohash 网格化模糊定位技术，仅将位置转换为大范围的网格区域代码，用于计算网格内是否有其他同伴在进行微互动。系统不会记录、存储或传输您的精准 GPS 坐标及行动轨迹。</p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 20px 0;">
+
+        <div class="faq-item">
+            <p class="faq-question"><span>❓</span> Apple Watch 无法同步数据或启动计时怎么办？</p>
+            <p class="faq-answer">请按照以下步骤排查：
+                <ul>
+                    <li>确保 iPhone 与 Apple Watch 的蓝牙及 Wi-Fi 均已开启，且两台设备保持连接。</li>
+                    <li>在 iPhone 的“Watch”应用中，确认「一起便了么」已成功安装至手表。</li>
+                    <li>首次使用请在 iPhone 上打开应用并授予必要的权限。</li>
+                </ul>
+            </p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 20px 0;">
+
+        <div class="faq-item">
+            <p class="faq-question"><span>❓</span> 为什么记录形态使用的是香蕉、松果等图示？</p>
+            <p class="faq-answer">我们基于医学布里斯托（Bristol）7 种便便形态分类，将其转化为清爽可爱的 Q 萌物体（如香蕉、松果、巧克力豆、可可水花等）。这样既能保留精准的健康特征，又能消除脏污不适感，让日常健康记录更加优雅顺畅。</p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 20px 0;">
+
+        <div class="faq-item">
+            <p class="faq-question"><span>❓</span> 蹲坑计时提醒如何工作？</p>
+            <p class="faq-answer">开启计时后，应用与萌宠伙伴会陪伴您的排便过程。当到达设定建议时长时，应用会通过温和的触觉震动与提示气泡提醒您结束，帮助您养成良好的排便习惯，避免久蹲。</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><a href="privacy.html">隐私政策</a> | &copy; 2026 一起便了么. 保留所有权利。</p>
+    </div>
+</div>
+
+</body>
+</html>
